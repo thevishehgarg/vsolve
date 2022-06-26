@@ -1,2 +1,0 @@
-# vsolve
-Company website
