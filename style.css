@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 @layer components {
+
+    /* mobile naigation  */
+
     .wrapper {
         position: fixed;
         top: 0;
+        z-index: 10;
         right: -100%;
         height: 100%;
         width: 100%;
@@ -19,7 +23,7 @@
 
     .menu-btn {
         position: absolute;
-        z-index: 2;
+        z-index: 30;
         right: 15px;
         top: 15px;
         height: 50px;
@@ -55,7 +59,7 @@
 
 
     .close {
-        z-index: 1;
+        z-index: 20;
         width: 100%;
         height: 100%;
         pointer-events: none;
@@ -133,13 +137,17 @@
         transform: translateX(-100px);
     }
 
-    #Landing p {
+    /* mobile naigation  */
+
+    /* text bubbles  */
+
+    .text-bubbles {
         border-radius: 1.15rem;
         line-height: 1.25;
     }
 
-    #Landing p::before,
-    #Landing p::after {
+    .text-bubbles::before,
+    .text-bubbles::after {
         bottom: -0.1rem;
         content: "";
         height: 1rem;
@@ -192,6 +200,8 @@
         transform: translate(-30px, -2px);
         width: 10px;
     }
+
+    /* text bubbles  */
 
     .get-started{
         box-shadow: 0 0 0 0.25rem #342710;
